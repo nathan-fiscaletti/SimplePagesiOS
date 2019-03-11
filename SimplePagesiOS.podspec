@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SimplePagesiOS'
-  s.version          = '0.1.1'
+  s.version          = '0.1.3'
   s.summary          = 'A more elegant solution to iOS Page View Controllers'
   s.swift_version    = '4.2'
 

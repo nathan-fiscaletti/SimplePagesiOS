@@ -56,6 +56,8 @@
 		99C9C79D2236E66700D5A256 /* Page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3.swift; sourceTree = "<group>"; };
 		99C9C79F2236E88700D5A256 /* Page2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2.swift; sourceTree = "<group>"; };
 		99C9C7A42236F5E800D5A256 /* VPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPageController.swift; sourceTree = "<group>"; };
+		99C9C7AD2237227A00D5A256 /* Basic Project.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Basic Project.md"; sourceTree = "<group>"; };
+		99C9C7AE223722B500D5A256 /* Navigation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Navigation.md; sourceTree = "<group>"; };
 		F888347D2A36FCA6426B5094 /* Pods-SimplePagesiOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePagesiOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePagesiOS_Example/Pods-SimplePagesiOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FEE550150E99E7A9F5900FBB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				99C9C7AC2237224D00D5A256 /* Docs */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for SimplePagesiOS */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -161,6 +164,16 @@
 				99C9C79D2236E66700D5A256 /* Page3.swift */,
 			);
 			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		99C9C7AC2237224D00D5A256 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				99C9C7AD2237227A00D5A256 /* Basic Project.md */,
+				99C9C7AE223722B500D5A256 /* Navigation.md */,
+			);
+			name = Docs;
+			path = ../Docs;
 			sourceTree = "<group>";
 		};
 		C868D353F7519D6211556851 /* Pods */ = {
