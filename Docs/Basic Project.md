@@ -20,7 +20,7 @@ class HPageController : PageController
 }
 ```
 4. Open your storyboard and add a **Page Veiw Controller** to use for your View Controller.
-5. Set it's Class to the class you created earlier.
+5. Set it's Class to the class you created earlier. 
 
 ![Set the custom class][page-controller-class]
 6. Configure the Page Controller section
@@ -35,7 +35,7 @@ class HPageController : PageController
 7. Configure the Page View Controller part of the Story Board configuration.
 
 > Notes: All PageControllers can also be used as Pages on other Page Controllers, that's why we have the `Preferred ID` and `Page Name` in the Page Controlle configuration. 
-8. Create as many **View Controllers** and set their custom class to **Page**.
+8. Create as many **View Controllers** and set their custom class to **Page**. 
 
 ![Set the custom class][page-class]
 9. Configure their Page configuration section
