@@ -32,4 +32,4 @@ Nathan Fiscaletti, nathan.fiscaletti@gmail.com
 
 SimplePagesiOS is available under the MIT license. See the LICENSE file for more info.
 
-[example]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/master/Images/example.gif "Example"
+[example]: Images/example.gif "Example"

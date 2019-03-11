@@ -48,8 +48,8 @@ class HPageController : PageController
 
 10. **Run your application.**
 
-[page-config]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/master/Images/pageConfigurationExample.png "Page Config Example"
-[page-controller-config]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/master/Images/pageControllerConfigurationExample.png "Page Controller Config Example"
-[page-controller-class]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/master/Images/customClassPageController.png "Page Controller Custom Class"
-[page-class]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/master/Images/customClassPage.png "Page Custom Class"
+[page-config]: ../Images/pageConfigurationExample.png "Page Config Example"
+[page-controller-config]: ../Images/pageControllerConfigurationExample.png "Page Controller Config Example"
+[page-controller-class]: ../Images/customClassPageController.png "Page Controller Custom Class"
+[page-class]: ../Images/customClassPage.png "Page Custom Class"
 
