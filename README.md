@@ -30,10 +30,10 @@ pod 'SimplePagesiOS'
 
 ### Create a **Page Veiw Controller** to use for your View Controller and configure it in your StoryBoard.
 
-![An example of the configuration for a Page Controller][page-controller-config]
 
 |Property|Description|
 |---|---|
+||![An example of the configuration for a Page Controller][page-controller-config]|
 |`InferIds`|When enabled, this will automatically determine the ID's for your pages.|
 |`Initial Page ID`|The ID of the Page that the Page Controller should start on.|
 |`Preferred ID`|The ID that you would prefer this Page to have. If `InferIds` is enabled, this will be ignored.|
