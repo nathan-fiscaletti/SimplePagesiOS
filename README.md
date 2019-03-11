@@ -2,7 +2,7 @@
 
 ![An example of a Vertifal Page Controller within a Horizontal Page Controller][example]
 
-[example]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/master/images/example.gif "Example"
+[example]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/master/Images/example.gif "Example"
 
 [![CI Status](https://img.shields.io/travis/nathan-fiscaletti/SimplePagesiOS.svg?style=flat)](https://travis-ci.org/nathan-fiscaletti/SimplePagesiOS)
 [![Version](https://img.shields.io/cocoapods/v/SimplePagesiOS.svg?style=flat)](https://cocoapods.org/pods/SimplePagesiOS)
