@@ -1,0 +1,23 @@
+{
+  "name": "SimplePagesiOS",
+  "version": "0.1.0",
+  "summary": "A short description of SimplePagesiOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/nathan-fiscaletti/SimplePagesiOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nathan-fiscaletti": "nathan.fiscaletti@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/nathan-fiscaletti/SimplePagesiOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SimplePagesiOS/Classes/**/*",
+  "frameworks": "UIKit"
+}

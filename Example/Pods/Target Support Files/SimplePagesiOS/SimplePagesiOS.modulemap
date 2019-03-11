@@ -1,0 +1,6 @@
+framework module SimplePagesiOS {
+  umbrella header "SimplePagesiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

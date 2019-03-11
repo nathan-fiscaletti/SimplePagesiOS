@@ -1,0 +1,16 @@
+PODS:
+  - SimplePagesiOS (0.1.0)
+
+DEPENDENCIES:
+  - SimplePagesiOS (from `../`)
+
+EXTERNAL SOURCES:
+  SimplePagesiOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SimplePagesiOS: f97f9dfc6e0acc4af6da3c93a1dfc9e681788058
+
+PODFILE CHECKSUM: ecf166d9579c3f96aece415292fc1ff4d7daf9b4
+
+COCOAPODS: 1.5.3

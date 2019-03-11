@@ -1,0 +1,6 @@
+framework module Pods_SimplePagesiOS_Tests {
+  umbrella header "Pods-SimplePagesiOS_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

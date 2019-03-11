@@ -13,6 +13,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		99C9C7942236D56700D5A256 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C9C7932236D56700D5A256 /* PageController.swift */; };
+		99C9C7982236DA5B00D5A256 /* SimplePagesiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C9C7972236DA5B00D5A256 /* SimplePagesiOS.framework */; };
 		9AC9459817775DCEF3243F6D /* Pods_SimplePagesiOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCB7DA0947C64B6BF3DECC9 /* Pods_SimplePagesiOS_Tests.framework */; };
 		F8883DE7B9331AC8057A5F94 /* Pods_SimplePagesiOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F96CCAD027A8B46A4DA72F /* Pods_SimplePagesiOS_Example.framework */; };
 /* End PBXBuildFile section */
@@ -42,11 +44,14 @@
 		607FACE51AFB9204008FA782 /* SimplePagesiOS_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePagesiOS_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8A4D7138B30A5CE34EAA83B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		8A873EA84D4606AD248B4B3A /* SimplePagesiOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SimplePagesiOS.podspec; path = ../SimplePagesiOS.podspec; sourceTree = "<group>"; };
+		8A4D7138B30A5CE34EAA83B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8A873EA84D4606AD248B4B3A /* SimplePagesiOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SimplePagesiOS.podspec; path = ../SimplePagesiOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98589C3FEF123AEE2FDC4210 /* Pods-SimplePagesiOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePagesiOS_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePagesiOS_Example/Pods-SimplePagesiOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		99C9C7932236D56700D5A256 /* PageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
+		99C9C7952236DA2B00D5A256 /* SimplePagesiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SimplePagesiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99C9C7972236DA5B00D5A256 /* SimplePagesiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SimplePagesiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F888347D2A36FCA6426B5094 /* Pods-SimplePagesiOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePagesiOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePagesiOS_Example/Pods-SimplePagesiOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FEE550150E99E7A9F5900FBB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FEE550150E99E7A9F5900FBB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C9C7982236DA5B00D5A256 /* SimplePagesiOS.framework in Frameworks */,
 				9AC9459817775DCEF3243F6D /* Pods_SimplePagesiOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +105,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				99C9C7932236D56700D5A256 /* PageController.swift */,
 			);
 			name = "Example for SimplePagesiOS";
 			path = SimplePagesiOS;
@@ -153,6 +160,8 @@
 		EEFF6D6744CFC50B3911E8E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99C9C7972236DA5B00D5A256 /* SimplePagesiOS.framework */,
+				99C9C7952236DA2B00D5A256 /* SimplePagesiOS.framework */,
 				35F96CCAD027A8B46A4DA72F /* Pods_SimplePagesiOS_Example.framework */,
 				3FCB7DA0947C64B6BF3DECC9 /* Pods_SimplePagesiOS_Tests.framework */,
 			);
@@ -324,6 +333,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				99C9C7942236D56700D5A256 /* PageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
