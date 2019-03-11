@@ -11,40 +11,20 @@ import UIKit
 
 open class Page : UIViewController, BasePage
 {
-    @IBInspectable var PreferredId: Int = -1
-    @IBInspectable var PageName: String = "Page"
-    var PageIndex: Int = 1
-    
-    var PageController: PageController?
-    
-    required public init?(coder aDecoder: NSCoder) {
-        PageController = nil
-        super.init(coder: aDecoder)
-    }
-    
-    open func inferredPageIndex() -> Int
-    {
-        return 0
-    }
+    @IBInspectable public var PreferredId: Int = -1
+    @IBInspectable public var PageName: String = "Page"
+    public var PageIndex: Int = 1
+    public var PageController: PageController?
     
     open func pageController() -> PageController? {
         return PageController
     }
 }
 
-protocol BasePage
+public protocol BasePage
 {
-    /// The index for this page afte rcomputing.
-    ///
-    var PageIndex:Int {get}
-    
-    /// The index for this page.
-    ///
-    /// If InferPageIndex is set to true,
-    /// this value will be ignored.
-    var PreferredId:Int {get set}
-    
-    /// The name for this page.
-    ///
-    var PageName:String {get set}
+    var PreferredId    : Int             { get set }
+    var PageName       : String          { get set }
+    var PageIndex      : Int             { get set }
+    var PageController : PageController? { get set }
 }

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IfO-os-7mz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page-->
+        <scene sceneID="A4R-ep-XdQ">
+            <objects>
+                <viewController storyboardIdentifier="Page1a" id="6l1-rQ-feT" customClass="Page" customModule="SimplePagesiOS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hzl-oe-gNw"/>
+                        <viewControllerLayoutGuide type="bottom" id="2hD-sq-rc0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Boz-pD-bxU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW0-3E-edm">
+                                <rect key="frame" x="64" y="223.5" width="247" height="220"/>
+                                <string key="text">Page 1
+Swipe to nagivate
+
+Swipe UP to navigate
+to page 1b
+
+Swipe RIGHT to navigate
+to page 2</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OW0-3E-edm" firstAttribute="centerY" secondItem="Boz-pD-bxU" secondAttribute="centerY" id="KGS-Ct-Pvn"/>
+                            <constraint firstItem="OW0-3E-edm" firstAttribute="centerX" secondItem="Boz-pD-bxU" secondAttribute="centerX" id="uaF-dr-tcE"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="PageName" value="Page1a"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="PreferredId">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FFB-t6-Gt4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1102" y="1054"/>
+        </scene>
+        <!--Page Controller-->
+        <scene sceneID="PT9-97-4jE">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="IfO-os-7mz" customClass="HPageController" customModule="SimplePagesiOS_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="InferIds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="PageName" value="PageController"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="DisableBounce" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="InitialPageId">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0W-Oe-8S0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247" y="-284"/>
+        </scene>
+        <!--Page Controller-->
+        <scene sceneID="lLT-Ud-NVg">
+            <objects>
+                <pageViewController storyboardIdentifier="Page1" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="haK-IY-8b1" customClass="VPageController" customModule="SimplePagesiOS_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="InferIds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="DisableBounce" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="PageName" value="Page1"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="PreferredId">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8OP-0p-znt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1103" y="385"/>
+        </scene>
+        <!--Page2-->
+        <scene sceneID="b3B-SM-gi3">
+            <objects>
+                <viewController storyboardIdentifier="Page2" id="H7X-64-ghw" customClass="Page2" customModule="SimplePagesiOS_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5aC-uC-3NN"/>
+                        <viewControllerLayoutGuide type="bottom" id="8qn-FL-gSh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1es-MR-uRr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmL-rA-2gF">
+                                <rect key="frame" x="100" y="306" width="175.5" height="55"/>
+                                <string key="text">Page 2
+Swipe to nagivate</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crr-Ff-NB8">
+                                <rect key="frame" x="16" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backTapped:" destination="H7X-64-ghw" eventType="touchUpInside" id="ZlC-Qw-6wV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LmL-rA-2gF" firstAttribute="centerY" secondItem="1es-MR-uRr" secondAttribute="centerY" id="E4l-c8-DPn"/>
+                            <constraint firstItem="crr-Ff-NB8" firstAttribute="leading" secondItem="1es-MR-uRr" secondAttribute="leadingMargin" id="Wqr-Uh-ys6"/>
+                            <constraint firstItem="LmL-rA-2gF" firstAttribute="centerX" secondItem="1es-MR-uRr" secondAttribute="centerX" id="fj7-NB-Pfh"/>
+                            <constraint firstItem="crr-Ff-NB8" firstAttribute="top" secondItem="5aC-uC-3NN" secondAttribute="bottom" id="vrh-8W-uDx"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="PreferredId">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="PageName" value="Page2"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mIT-Kx-Ptd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="385.45727136431788"/>
+        </scene>
+        <!--Page3-->
+        <scene sceneID="tg6-Rx-IsN">
+            <objects>
+                <viewController storyboardIdentifier="Page3" id="Qkf-XK-YZe" customClass="Page3" customModule="SimplePagesiOS_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cZX-GG-AK6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kfg-ek-wQI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bwM-hj-ugw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apy-UA-c2f">
+                                <rect key="frame" x="100" y="306" width="175.5" height="55"/>
+                                <string key="text">Page 3
+Swipe to nagivate</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KA5-b2-dSD">
+                                <rect key="frame" x="137" y="377" width="101" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="PKJ-Xx-28k"/>
+                                </constraints>
+                                <state key="normal" title="Back to Page 1"/>
+                                <connections>
+                                    <action selector="backToPageOneTapped:" destination="Qkf-XK-YZe" eventType="touchUpInside" id="Zh3-Lf-euP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWY-D4-0y7">
+                                <rect key="frame" x="16" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backTapped:" destination="Qkf-XK-YZe" eventType="touchUpInside" id="RDT-Yg-ddV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0052782012195121955" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Apy-UA-c2f" firstAttribute="centerY" secondItem="bwM-hj-ugw" secondAttribute="centerY" id="5vZ-sT-raJ"/>
+                            <constraint firstItem="MWY-D4-0y7" firstAttribute="top" secondItem="cZX-GG-AK6" secondAttribute="bottom" id="DHV-Vd-Uos"/>
+                            <constraint firstItem="KA5-b2-dSD" firstAttribute="top" secondItem="Apy-UA-c2f" secondAttribute="bottom" constant="16" id="bEr-W8-Ig2"/>
+                            <constraint firstItem="KA5-b2-dSD" firstAttribute="centerX" secondItem="bwM-hj-ugw" secondAttribute="centerX" id="kXc-iS-4iW"/>
+                            <constraint firstItem="Apy-UA-c2f" firstAttribute="centerX" secondItem="bwM-hj-ugw" secondAttribute="centerX" id="zEA-l0-7u0"/>
+                            <constraint firstItem="MWY-D4-0y7" firstAttribute="leading" secondItem="bwM-hj-ugw" secondAttribute="leadingMargin" id="zj2-zu-mT1"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="PreferredId">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="PageName" value="Page3"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XqC-5b-qQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="385.45727136431788"/>
+        </scene>
+        <!--Page-->
+        <scene sceneID="bae-lJ-Ojk">
+            <objects>
+                <viewController storyboardIdentifier="Page1b" id="fcr-WH-N3G" customClass="Page" customModule="SimplePagesiOS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Xe-xP-we8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Otg-vw-hO7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S3H-57-gHg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWk-pj-d2t">
+                                <rect key="frame" x="62" y="265" width="251.5" height="137.5"/>
+                                <string key="text">Page 1b
+Swipe to nagivate
+
+Swipe DOWN to navigate
+to page 1a</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rWk-pj-d2t" firstAttribute="centerX" secondItem="S3H-57-gHg" secondAttribute="centerX" id="dey-rj-VOT"/>
+                            <constraint firstItem="rWk-pj-d2t" firstAttribute="centerY" secondItem="S3H-57-gHg" secondAttribute="centerY" id="jJc-vx-SXf"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="PageName" value="Page1b"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="PreferredId">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KO9-hy-VPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="1055"/>
+        </scene>
+    </scenes>
+</document>

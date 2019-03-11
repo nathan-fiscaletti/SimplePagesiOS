@@ -12,19 +12,20 @@ open class PageController :
     UIPageViewController,
     UIPageViewControllerDataSource,
     UIPageViewControllerDelegate,
-    UIScrollViewDelegate,
     BasePage
 {
+    // Page Controller
     @IBInspectable var InferIds: Bool = true
-    @IBInspectable var PreferredId: Int = -1
-    @IBInspectable var PageName: String = "PageController"
-    @IBInspectable var DisableBounce: Bool = false
     @IBInspectable var InitialPageId: Int = 0
-    
-    var PageIndex: Int = -1
     var CurrentIndex: Int = 0
-    
     private var pages: [Page] = []
+    private var pageControllers: [PageController] = []
+    
+    // BasePage
+    @IBInspectable public var PreferredId: Int = -1
+    @IBInspectable public var PageName: String = "PageController"
+    public var PageIndex: Int = -1
+    public var PageController: PageController?
     
     required public init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -33,14 +34,10 @@ open class PageController :
     override open func viewDidLoad() {
         super.viewDidLoad()
         
-        self.pages = self.loadPages()
+        self.loadPages()
         
         self.dataSource = self;
         self.delegate = self;
-        
-        if (self.DisableBounce) {
-            self.disableBounce()
-        }
         
         self.navigateTo(
             pageWithId: InitialPageId,
@@ -49,12 +46,25 @@ open class PageController :
         )
     }
     
+    open func add(page: PageController)
+    {
+        page.PageController = self
+        
+        if self.InferIds {
+            page.PageIndex = self.pages.count + self.pageControllers.count
+        } else {
+            page.PageIndex = page.PreferredId
+        }
+        
+        self.pageControllers.append(page)
+    }
+    
     open func add(page: Page)
     {
         page.PageController = self
         
         if self.InferIds {
-            page.PageIndex = self.pages.count
+            page.PageIndex = self.pages.count + self.pageControllers.count
         } else {
             page.PageIndex = page.PreferredId
         }
@@ -63,20 +73,19 @@ open class PageController :
     }
     
     open func pageControllerForIndex(_ index: Int) -> UIViewController? {
-        if (self.pages.count > index) {
-            return self.pages[index];
+        for page in pages {
+            if page.PageIndex == index {
+                return page
+            }
+        }
+        
+        for pageController in pageControllers {
+            if pageController.PageIndex == index {
+                return pageController
+            }
         }
         
         return nil
-    }
-    
-    private func disableBounce() {
-        for subview in self.view.subviews {
-            if let scrollView = subview as? UIScrollView {
-                scrollView.delegate = self
-                break;
-            }
-        }
     }
     
     open func navigateTo(
@@ -107,59 +116,52 @@ open class PageController :
                     direction: direction
                 )
                 
+                return
+            }
+        }
+        
+        for page in pageControllers {
+            if (page.PageName == name) {
+                self.navigateTo(
+                    pageWithId: page.PageIndex,
+                    animated: true,
+                    direction: direction
+                )
+                
                 break
             }
         }
     }
     
-    open func loadPages() -> [Page]
+    open func navigateBack(animated: Bool)
     {
-        return self.pages;
-    }
-    
-    private func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if (
-            CurrentIndex == 0 &&
-                scrollView.contentOffset.x < scrollView.bounds.size.width
-            ) {
-            scrollView.contentOffset = CGPoint(x: scrollView.bounds.size.width, y: 0);
-        } else if (
-            CurrentIndex == self.pages.count - 1 &&
-                scrollView.contentOffset.x > scrollView.bounds.size.width
-            ) {
-            scrollView.contentOffset = CGPoint(x: scrollView.bounds.size.width, y: 0);
+        if (CurrentIndex != 0) {
+            self.navigateTo(pageWithId: CurrentIndex - 1, animated: animated, direction: .reverse)
         }
     }
     
-    private func scrollViewWillEndDragging(
-        _ scrollView: UIScrollView,
-        withVelocity velocity: CGPoint,
-        targetContentOffset: UnsafeMutablePointer<CGPoint>
-        ) {
-        if (
-            CurrentIndex == 0 &&
-                scrollView.contentOffset.x <= scrollView.bounds.size.width
-            ) {
-            targetContentOffset.pointee = CGPoint(x: scrollView.bounds.size.width, y: 0);
-        } else if (
-            CurrentIndex == self.pages.count - 1 &&
-                scrollView.contentOffset.x >= scrollView.bounds.size.width
-            ) {
-            targetContentOffset.pointee = CGPoint(x: scrollView.bounds.size.width, y: 0);
+    open func navigateForward(animated: Bool) {
+        if (CurrentIndex != pages.count + pageControllers.count - 1) {
+            self.navigateTo(pageWithId: CurrentIndex + 1, animated: animated, direction: .forward)
         }
     }
     
-    private func pageViewController(
+    open func loadPages()
+    {
+        // Not implemented
+    }
+    
+    public func pageViewController(
         _ pageViewController: UIPageViewController,
         didFinishAnimating finished: Bool,
         previousViewControllers: [UIViewController],
         transitionCompleted completed: Bool
-        ) {
+    ) {
         guard completed else {return}
         
         let viewController = pageViewController.viewControllers?.first
-        if (viewController is Page) {
-            let page = viewController as? Page
+        if (viewController is BasePage) {
+            let page = viewController as? BasePage;
             CurrentIndex = (page?.PageIndex)!
         }
     }
@@ -170,8 +172,8 @@ open class PageController :
         ) -> UIViewController? {
         var index:Int = 0
         
-        if (viewController is Page) {
-            let page = viewController as? Page;
+        if (viewController is BasePage) {
+            let page = viewController as? BasePage;
             index = page?.PageIndex ?? 0;
         }
         
@@ -188,12 +190,12 @@ open class PageController :
         ) -> UIViewController? {
         var index:Int = pages.count - 1
         
-        if (viewController is Page) {
-            let page = viewController as? Page;
-            index = page?.PageIndex ?? pages.count - 1;
+        if (viewController is BasePage) {
+            let page = viewController as? BasePage;
+            index = page?.PageIndex ?? (pages.count + pageControllers.count) - 1;
         }
         
-        if (index == pages.count - 1) {
+        if (index == (pages.count + pageControllers.count) - 1) {
             return nil;
         }
         
