@@ -23,6 +23,7 @@ class HPageController : PageController
 5. Set it's Class to the class you created earlier. 
 
 ![Set the custom class][page-controller-class]
+
 6. Configure the Page Controller section
 
 |Property|Description|
@@ -38,6 +39,7 @@ class HPageController : PageController
 8. Create as many **View Controllers** and set their custom class to **Page**. 
 
 ![Set the custom class][page-class]
+
 9. Configure their Page configuration section
 
 |Property|Description|
