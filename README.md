@@ -43,10 +43,9 @@ pod 'SimplePagesiOS'
 
 ### Create as many pages as you'd like for your PageController and configure them in your StoryBoard.
 
-![An example of the configuration for a Page][page-config]
-
 |Property|Description|
 |---|---|
+||![An example of the configuration for a Page][page-config]|
 |`Preferred ID`|The ID that you would prefer this Page to have. If `InferIds` is enabled, this will be ignored.|
 |`Page Name`|The name for the Page.|
 
