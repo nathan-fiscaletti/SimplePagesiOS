@@ -20,6 +20,10 @@ it, simply add the following line to your Podfile:
 pod 'SimplePagesiOS'
 ```
 
+## Usage
+
+See [the documentation](Docs/) for information on how to implement SimplePages.
+
 ## Author
 
 Nathan Fiscaletti, nathan.fiscaletti@gmail.com
