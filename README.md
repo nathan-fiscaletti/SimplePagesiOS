@@ -78,8 +78,8 @@ Nathan Fiscaletti, nathan.fiscaletti@gmail.com
 
 SimplePagesiOS is available under the MIT license. See the LICENSE file for more info.
 
-[example]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/master/Images/example.gif "Example"
-[page-config]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/master/Images/pageConfigurationExample.png "Page Config Example"
-[page-controller-config]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/master/Images/pageControllerConfigurationExample.png "Page Controller Config Example"
-[page-controller-class]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/master/Images/customClassPageController.png "Page Controller Custom Class"
-[page-class]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/master/Images/customClassPage.png "Page Custom Class"
+[example]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/0.1.1/Images/example.gif "Example"
+[page-config]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/0.1.1/Images/pageConfigurationExample.png "Page Config Example"
+[page-controller-config]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/0.1.1/Images/pageControllerConfigurationExample.png "Page Controller Config Example"
+[page-controller-class]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/0.1.1/Images/customClassPageController.png "Page Controller Custom Class"
+[page-class]: https://github.com/nathan-fiscaletti/SimplePagesiOS/raw/0.1.1/Images/customClassPage.png "Page Custom Class"
