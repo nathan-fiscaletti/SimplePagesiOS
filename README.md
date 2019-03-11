@@ -1,8 +1,6 @@
 # SimplePagesiOS
 
 ![An example of a Vertifal Page Controller within a Horizontal Page Controller][example]
-![An example of the configuration for a Page][page-config]
-![An example of the configuration for a Page Controller][page-controller-config]
 
 [![CI Status](https://img.shields.io/travis/nathan-fiscaletti/SimplePagesiOS.svg?style=flat)](https://travis-ci.org/nathan-fiscaletti/SimplePagesiOS)
 [![Version](https://img.shields.io/cocoapods/v/SimplePagesiOS.svg?style=flat)](https://cocoapods.org/pods/SimplePagesiOS)
