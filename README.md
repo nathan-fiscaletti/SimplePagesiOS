@@ -32,20 +32,23 @@ pod 'SimplePagesiOS'
 
 ![An example of the configuration for a Page Controller][page-controller-config]
 
-1. `InferIds` - When enabled, this will automatically determine the ID's for your pages.
-    - When you have `InferIds` enabled, you should navigate to pages using `navigateTo(pageWithName: ...)` instead of `navigateTo(pageWithId: ...)`
-2. `Initial Page ID` - The ID of the Page that the Page Controller should start on.
-3. `Preferred ID` - The ID that you would prefer this Page to have. If `InferIds` is enabled, this will be ignored.
-4. `Page Name` - The name for the Page.
+|Property|Description|
+|---|---|
+|`InferIds`|When enabled, this will automatically determine the ID's for your pages.|
+|`Initial Page ID`|The ID of the Page that the Page Controller should start on.|
+|`Preferred ID`|The ID that you would prefer this Page to have. If `InferIds` is enabled, this will be ignored.|
+|`Page Name`|The name for the Page.|
 
-> Note: All PageControllers can also be used as Pages on other Page Controllers, that's why we have the `Preferred ID` and `Page Name` in the Page Controlle configuration. 
+> Notes: All PageControllers can also be used as Pages on other Page Controllers, that's why we have the `Preferred ID` and `Page Name` in the Page Controlle configuration. 
 
 ### Create as many pages as you'd like for your PageController and configure them in your StoryBoard.
 
 ![An example of the configuration for a Page][page-config]
 
-1. `Preferred ID` - The ID that you would prefer this Page to have. If `InferIds` is enabled, this will be ignored.
-2. `Page Name` - The name for the Page.
+|`Preferred ID`|The ID that you would prefer this Page to have. If `InferIds` is enabled, this will be ignored.|
+|`Page Name`|The name for the Page.|
+
+### Create a new class and import `SimplePagesiOS`
 
 ## Author
 
