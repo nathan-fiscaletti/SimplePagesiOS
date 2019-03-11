@@ -49,20 +49,20 @@
 		46A753E94E1A99EC1EC6DED6AC61E666 /* SimplePagesiOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimplePagesiOS.xcconfig; sourceTree = "<group>"; };
 		5191171FE81EB0A8BFB43FD94513E210 /* Pods-SimplePagesiOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimplePagesiOS_Example.modulemap"; sourceTree = "<group>"; };
 		5FDDCC889EA4AF50940B9B23C6257232 /* SimplePagesiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimplePagesiOS-dummy.m"; sourceTree = "<group>"; };
-		6168A7E00400C4FD50CD0385B5413EF5 /* Pods_SimplePagesiOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimplePagesiOS_Example.framework; path = "Pods-SimplePagesiOS_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6168A7E00400C4FD50CD0385B5413EF5 /* Pods_SimplePagesiOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplePagesiOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BEE1C92A03DCE2A291509C04083B44 /* SimplePagesiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimplePagesiOS-umbrella.h"; sourceTree = "<group>"; };
 		74A1C1F6CDEEB2C3EE3B4D9EE05ED512 /* Pods-SimplePagesiOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimplePagesiOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		75B196374C465BF523A29828C4801EA3 /* Pods-SimplePagesiOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimplePagesiOS_Example-umbrella.h"; sourceTree = "<group>"; };
 		77BB0E424DDEC162B87190919ED08101 /* Pods-SimplePagesiOS_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimplePagesiOS_Tests-resources.sh"; sourceTree = "<group>"; };
-		85B7A126AF2F3DB5FF2E387ED806362D /* SimplePagesiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimplePagesiOS.framework; path = SimplePagesiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B7A126AF2F3DB5FF2E387ED806362D /* SimplePagesiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimplePagesiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F528D69E475AB543558FEF1AFB628A9 /* SimplePagesiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimplePagesiOS.modulemap; sourceTree = "<group>"; };
 		A354965A723080C96172D1BDEA3E4C1B /* Pods-SimplePagesiOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimplePagesiOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A42224A78BC73FC52BD76FDE4995BF9C /* Pods-SimplePagesiOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimplePagesiOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AAB5A4F72E30C089BFB5F64EA80C967F /* Pods-SimplePagesiOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimplePagesiOS_Tests.modulemap"; sourceTree = "<group>"; };
 		AE3CB64C80C96E491D59E735FF50E9D1 /* Page.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Page.swift; path = SimplePagesiOS/Classes/Page.swift; sourceTree = "<group>"; };
-		B261494B2BFB08EAF552B800D15784C3 /* Pods_SimplePagesiOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimplePagesiOS_Tests.framework; path = "Pods-SimplePagesiOS_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B261494B2BFB08EAF552B800D15784C3 /* Pods_SimplePagesiOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplePagesiOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F2FD5010380814B8F5EC7CB4C37100 /* Pods-SimplePagesiOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimplePagesiOS_Example-dummy.m"; sourceTree = "<group>"; };
 		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BCE9E1A119CC2293C8E0228AA01F53B9 /* Pods-SimplePagesiOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimplePagesiOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -70,11 +70,11 @@
 		C57BFFE3E4AC302473AE41C7D5C788EE /* Pods-SimplePagesiOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimplePagesiOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CC203018EE153FD18422A1AC4E1A5ADE /* Pods-SimplePagesiOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimplePagesiOS_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D5AFE914E6BB5B32418E0BD850E7B8E9 /* PageController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageController.swift; path = SimplePagesiOS/Classes/PageController.swift; sourceTree = "<group>"; };
-		DB794175C6258534EBD940DA44D9BBE9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DB794175C6258534EBD940DA44D9BBE9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E4F1B2E8ABA7B2C57D09090BC7BC55FF /* Pods-SimplePagesiOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimplePagesiOS_Tests-dummy.m"; sourceTree = "<group>"; };
-		E6A34F40A8104B3D23A3A9B7AFE0E7B4 /* SimplePagesiOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SimplePagesiOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E6A34F40A8104B3D23A3A9B7AFE0E7B4 /* SimplePagesiOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SimplePagesiOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EA65A152833EC633EF708BA64FD45BCF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F41B28168BB213C96C97909F99189DD5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F41B28168BB213C96C97909F99189DD5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FBF46C7FEEF58E8A3D06E147AF39C9E4 /* SimplePagesiOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimplePagesiOS-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -325,6 +325,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					B62CA1FB588516EEE30A974C5E387A2F = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -518,7 +523,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -551,7 +556,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
