@@ -45,6 +45,8 @@ pod 'SimplePagesiOS'
 
 ![An example of the configuration for a Page][page-config]
 
+|Property|Description|
+|---|---|
 |`Preferred ID`|The ID that you would prefer this Page to have. If `InferIds` is enabled, this will be ignored.|
 |`Page Name`|The name for the Page.|
 
