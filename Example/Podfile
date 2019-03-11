@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SimplePagesiOS_Example' do
+  pod 'SimplePagesiOS', :path => '../'
+
+  target 'SimplePagesiOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
