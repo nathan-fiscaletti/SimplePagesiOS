@@ -72,7 +72,7 @@ pod 'SimplePagesiOS'
 
 ## Author
 
-nathan-fiscaletti, nathan.fiscaletti@gmail.com
+Nathan Fiscaletti, nathan.fiscaletti@gmail.com
 
 ## License
 
